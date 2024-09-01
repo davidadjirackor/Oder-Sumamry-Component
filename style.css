@@ -1,0 +1,216 @@
+body{
+  background-color : hsl(225, 100%, 94%);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.top-image svg{
+  width:100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 0 30px;
+  
+}
+.header p{
+  color: grey
+}
+
+
+@media only screen and (min-width: 375px) {
+
+.background-image-desktop{
+  position: absolute;
+  left:0;
+  bottom: 60%;
+  z-index: -1;
+  display: block;
+  object-fit: cover;
+}
+  
+.background-image-mobile{
+  display: none;
+}
+
+.main-card{
+  max-width: 400px;
+  background-color: white;
+  margin: 50px auto;
+  border-radius: 20px;
+  padding-bottom: 40px;
+ 
+  
+}
+
+.price-section{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color:hsl(225, 100%, 98%);
+  margin: 30px 0;
+  border-radius: 10px;
+  gap: 30px;  
+  overflow: hidden;
+}
+
+.price p{
+  font-weight: 500;
+  font-size: 20px;
+  color: hsl(223, 47%, 23%);
+   
+}
+
+.price span {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  align-items: flex-start;
+  font-weight: 400;
+  padding-top: 5px;
+   
+}
+
+
+.price-cta button{
+  border: none;
+  background-color: transparent;
+  color:hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.price-cta button:hover{
+  cursor: pointer;
+  color:black;
+ }
+
+.cancel-cta{
+  margin-top:20px ;
+}
+
+.payment-cta button{
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.payment-cta button:hover{
+  cursor: pointer;
+  background-color:hsl(224, 23%, 55%);
+ }
+
+.cancel-cta:hover{
+  cursor: pointer;
+  color:hsl(223, 47%, 23%);
+ }
+}
+
+@media only screen and (max-width: 375px) {
+  
+.background-image-desktop{
+  display: none;
+}
+  
+.background-image-mobile{
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: -1;
+}
+  
+  .main-card{
+  max-width: 375px;
+  background-color: white;
+  margin: 100px auto;
+  border-radius: 20px;
+  padding-bottom: 40px;
+ 
+  
+}
+
+.price-section{
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color:hsl(225, 100%, 98%);
+  margin: 30px 0;
+  border-radius: 10px;
+  gap: 30px;  
+  overflow: hidden;
+}
+  
+  .music-icon {
+    width: 100%;
+  }
+  .price-cta{
+    width: 100%;
+  }
+.price p{
+  font-weight: 500;
+  font-size: 20px;
+  color: hsl(223, 47%, 23%);
+   
+}
+
+.price span {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  align-items: flex-start;
+  font-weight: 400;
+  padding-top: 5px;
+   
+}
+
+
+.price-cta button{
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  color:hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+.price-cta button:hover{
+  cursor: pointer;
+  color:black;
+ }
+
+.cancel-cta{
+  margin-top:20px ;
+}
+
+.payment-cta button{
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.payment-cta button:hover{
+  cursor: pointer;
+  background-color:hsl(224, 23%, 55%);
+ }
+
+.cancel-cta:hover{
+  cursor: pointer;
+  color:hsl(223, 47%, 23%);
+ }
+}
